@@ -5,14 +5,17 @@ namespace TaskManager.Tests;
 
 public class Startup : IClassFixture<WebApplicationFactory<Program>>
 {
+    readonly WebApplicationFactory<Program> clientFactory = new WebApplicationFactory<Program>();
+    readonly string taskEndpoint = "/task";
+
     [Fact]
     public async Task ThereShouldBeAGetAllTasksEndpoint()
     {
         // Arrange
-        var client = new WebApplicationFactory<Program>().CreateClient();
+        var client = clientFactory.CreateClient();
 
         // Act
-        var result = await client.GetAsync("/task");
+        var result = await client.GetAsync(taskEndpoint);
 
         // Assert
         result.EnsureSuccessStatusCode();
@@ -22,10 +25,10 @@ public class Startup : IClassFixture<WebApplicationFactory<Program>>
     public async Task GetAllTasksEndpoint_ShouldReturnAnEmptyList()
     {
         // Arrange
-        var client = new WebApplicationFactory<Program>().CreateClient();
+        var client = clientFactory.CreateClient();
 
         // Act
-        var result = await client.GetFromJsonAsync<List<string>>("/task");
+        var result = await client.GetFromJsonAsync<List<string>>(taskEndpoint);
 
         // Assert
         Assert.Equal([], result);
