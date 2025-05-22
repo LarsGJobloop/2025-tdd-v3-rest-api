@@ -10,3 +10,6 @@ Connect the dots:
 1. `dotnet add TaskManager.Tests reference TaskManager`
 2. `dotnet sln add TaskManager`
 3. `dotnet sln add TaskManager.Tests`
+
+Add additional dependencies (external):
+1. `dotnet add TaskManager.Tests package Microsoft.AspNetCore.Mvc.Testing`: For testing Web APIs.

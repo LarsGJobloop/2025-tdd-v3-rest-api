@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "lxiS12dnRegdFAYJJP2-g",
+      "type": "text",
+      "x": 144.0266876220703,
+      "y": 105.76171112060547,
+      "width": 302.25982666015625,
+      "height": 150,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a1",
+      "roundness": null,
+      "seed": 322138154,
+      "version": 121,
+      "versionNonce": 1477353782,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1747899046676,
+      "link": null,
+      "locked": false,
+      "text": "TaskManager\n\nMinst invariant\n\nNår vi nettop har starte appen\nså får vi tilbake en tom liste.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "TaskManager\n\nMinst invariant\n\nNår vi nettop har starte appen\nså får vi tilbake en tom liste.",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
