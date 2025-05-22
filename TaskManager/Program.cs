@@ -3,6 +3,8 @@ var app = builder.Build();
 
 app.MapGet("/task", () => new List<string>());
 
+app.MapPost("/task", () => "Created Task");
+
 app.Run();
 
 public partial class Program { }
